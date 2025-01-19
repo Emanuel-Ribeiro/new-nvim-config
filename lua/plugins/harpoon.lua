@@ -14,15 +14,15 @@ return {
 
 			-- Navegação entre os arquivos marcados
 			vim.keymap.set("n", "<C-h>", function() harpoon_ui.nav_file(1) end, { desc = "Go to Harpoon file 1" })
-			vim.keymap.set("n", "<C-t>", function() harpoon_ui.nav_file(2) end, { desc = "Go to Harpoon file 2" })
-			vim.keymap.set("n", "<C-n>", function() harpoon_ui.nav_file(3) end, { desc = "Go to Harpoon file 3" })
-			vim.keymap.set("n", "<C-s>", function() harpoon_ui.nav_file(4) end, { desc = "Go to Harpoon file 4" })
+			vim.keymap.set("n", "<C-j>", function() harpoon_ui.nav_file(2) end, { desc = "Go to Harpoon file 2" })
+			vim.keymap.set("n", "<C-k>", function() harpoon_ui.nav_file(3) end, { desc = "Go to Harpoon file 3" })
+			vim.keymap.set("n", "<C-l>", function() harpoon_ui.nav_file(4) end, { desc = "Go to Harpoon file 4" })
 
 			-- Substituir os arquivos na posição correspondente
 			vim.keymap.set("n", "<leader><C-h>", function() harpoon_mark.set_current_at(1) end, { desc = "Replace Harpoon file 1" })
-			vim.keymap.set("n", "<leader><C-t>", function() harpoon_mark.set_current_at(2) end, { desc = "Replace Harpoon file 2" })
-			vim.keymap.set("n", "<leader><C-n>", function() harpoon_mark.set_current_at(3) end, { desc = "Replace Harpoon file 3" })
-			vim.keymap.set("n", "<leader><C-s>", function() harpoon_mark.set_current_at(4) end, { desc = "Replace Harpoon file 4" })
+			vim.keymap.set("n", "<leader><C-j>", function() harpoon_mark.set_current_at(2) end, { desc = "Replace Harpoon file 2" })
+			vim.keymap.set("n", "<leader><C-k>", function() harpoon_mark.set_current_at(3) end, { desc = "Replace Harpoon file 3" })
+			vim.keymap.set("n", "<leader><C-l>", function() harpoon_mark.set_current_at(4) end, { desc = "Replace Harpoon file 4" })
 		end,
 	},
 }
